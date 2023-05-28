@@ -93,8 +93,8 @@ const editHandler = (index) => {
 };
 
 const checkBoxHandler = (index) =>{
-  let box = getElem(`box${index}`)
-  let sib = box.parentElement.previousElementSibling
+  const box = getElem(`box${index}`)
+  const sib = box.parentElement.previousElementSibling
   if(box.checked){
     sib.classList.add("strike")
   }
@@ -128,6 +128,6 @@ const setLocal = (data) => localStorage.setItem("todo", JSON.stringify(data));
 
 const getLocal = () => JSON.parse(localStorage.getItem("todo"));
 
-let arr = getLocal();
+const arr = getLocal();
 showUi();
 let targetEdit;
