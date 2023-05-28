@@ -128,6 +128,6 @@ const setLocal = (data) => localStorage.setItem("todo", JSON.stringify(data));
 
 const getLocal = () => JSON.parse(localStorage.getItem("todo"));
 
-const arr = getLocal();
+let arr = getLocal();
 showUi();
 let targetEdit;
