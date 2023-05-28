@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#EditBtn {
+  display: none;
+  background: blue;
+}
+#AddBtn {
+  display: block;
+}
+#img-404 {
+  display: none;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+body {
+  background-image: linear-gradient(
+    to left,
+    rgb(218, 218, 218),
+    rgb(223, 238, 255)
+  );
+  font-family: "Poppins", sans-serif;
+}
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+h1 {
+  margin: 10px;
+  color: rgb(232, 58, 255);
+}
+
+form {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+form button {
+  position: absolute;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 20px;
+  right: 0px;
+  border: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(226, 98, 226);
+  color: #fff;
+  transition: 0.3s;
+}
+form button:hover {
+  background: rgb(197, 34, 197);
+}
+form input {
+  border-radius: 20px;
+  outline-style: none;
+  font-size: 20px;
+  padding: 10px;
+  padding-right: 80px;
+  border: 0;
+  width: 100%;
+}
+form input:focus {
+  background: rgb(248, 240, 255);
+  border: 1px solid violet;
+}
+
+main {
+  text-align: center;
+}
+#suc-edit {
+  background: rgb(255, 255, 255, 0.6);
+  padding: 10px 8px;
+  color: rgb(2, 167, 43);
+  display: inline-block;
+  border-radius: 5px;
+  position: fixed;
+  left: -100vh;
+  transition: 0.5s;
+}
+main button {
+  padding: 8px 15px;
+  font-size: 18px;
+  background: rgb(255, 146, 146);
+  border-radius: 100px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+main button:hover {
+  background: red;
+}
+.list {
+  margin: 20px 5px;
+  display: flex;
+  justify-content: center;
+}
+table {
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 2px solid rgb(255, 0, 255);
+  border-collapse: collapse;
+}
+th {
+  font-size: 18px;
+}
+#action {
+  display: flex;
+  justify-content: center;
+}
+#action :nth-child(1) {
+  margin-right: 5px;
+}
+
+.strike{
+  text-decoration: line-through;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+select option:checked {
+  font-weight: bold;
+  color: #000;
+}
+
+span {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 0;
+  transition: 0.1s;
+}
+span:hover {
+  transform: scale(1.1);
+}
+.edit {
+  color: rgb(0, 89, 255);
+  cursor: pointer;
+}
+.delete {
+  color: rgb(255, 68, 68);
+  cursor: pointer;
+}
+
+.box{
+  margin-left: 8px;
+}

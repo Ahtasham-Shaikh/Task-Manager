@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
+  <body>
+    <header>
+      <h1>Task Manager Web App</h1>
+      <form action="javascript:void(0)">
+        <input id="inputField" type="text" />
+        <button id="AddBtn" onclick="addList()">Add</button>
+        <button id="EditBtn">Edit</button>
+      </form>
+    </header>
+    <main>
+      <button onclick="allClear()">All Clear</button>
+      <div id="suc-edit">
+        <h3>Successfully Edited</h3>
+      </div>
+
+      <select onchange="filterHandler()" id="filter" name="filter">
+        <option value="Oldest">Oldest</option>
+        <option value="Newest">Newest</option>
+      </select>
+      <div class="list">
+        <table>
+          <thead>
+            <th>No.</th>
+            <th>What To Do?</th>
+            <th>Action</th>
+          </thead>
+          <tbody id="tbody">
+            <!-- <tr>
+              <td>${index < 9 ? "0" + ++index : ++index}</td>
+              <td>${data}</td>
+              <td id="action">
+                <span onclick="editHandler(${index})" class="edit material-symbols-outlined">edit</span>
+                <span onclick="deleteHandler(${index})" class="delete material-symbols-outlined">delete</span>
+                <input id="box${index}" class="box" type="checkbox" onclick="checkBoxHandler(${index})">
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+      <img id="img-404" src="./nothing.gif" alt="" />
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
